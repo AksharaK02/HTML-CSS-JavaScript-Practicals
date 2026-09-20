@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practical Programs Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #202124;
+        }
+
+        header {
+            background-color: #174EA6;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #174EA6;
+            margin-top: 0;
+        }
+
+        .description {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .subject-link {
+            display: block;
+            text-decoration: none;
+            background-color: #e8f0fe;
+            color: #174EA6;
+            padding: 25px 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid #d2e3fc;
+            transition: 0.3s;
+        }
+
+        .subject-link:hover {
+            background-color: #d2e3fc;
+            transform: translateY(-4px);
+        }
+
+        .subject-icon {
+            display: block;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background-color: #174EA6;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .subjects {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML, CSS, JavaScript & Node.js</h1>
+        <p>Practical Programs and Experiments Website</p>
+    </header>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h2>Welcome to Practical Programs</h2>
+
+            <p class="description">
+                Explore practical experiments, programming concepts,
+                and interactive projects organized by subject.
+            </p>
+
+            <div class="subjects">
+
+                <a class="subject-link" href="html/index.html">
+                    <span class="subject-icon">🌐</span>
+                    HTML Experiments
+                </a>
+
+                <a class="subject-link" href="css/index.html">
+                    <span class="subject-icon">🎨</span>
+                    CSS Experiments
+                </a>
+
+                <a class="subject-link" href="javascript/index.html">
+                    <span class="subject-icon">⚡</span>
+                    JavaScript Experiments
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>HTML, CSS, JavaScript & Node.js Practical Programs</p>
+    </footer>
+
+</body>
+
+</html>
